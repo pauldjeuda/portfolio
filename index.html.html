@@ -78,7 +78,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .skill-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.1rem;text-align:center;backdrop-filter:blur(10px);transition:border-color .2s,transform .2s;display:none}
 .skill-card.visible{display:block}
 .skill-card:hover{border-color:var(--orange);transform:translateY(-2px)}
-.skill-logo{font-size:.75rem;font-weight:900;color:var(--orange);height:32px;display:flex;align-items:center;justify-content:center;font-family:monospace;margin-bottom:.45rem}
+.skill-logo{height:36px;display:flex;align-items:center;justify-content:center;gap:.4rem;margin-bottom:.5rem}
+.skill-logo img{height:100%;width:auto;max-width:38px;object-fit:contain}
+.skill-logo svg{height:100%;width:auto;max-width:34px}
 .skill-name{font-size:.78rem;font-weight:600;margin-bottom:.12rem}
 .skill-cat{font-size:.64rem;color:var(--muted)}
 #education .sec-title{text-align:center}
@@ -237,26 +239,27 @@ footer{position:relative;z-index:10;text-align:center;padding:1.4rem;border-top:
     <button class="tab-btn" data-cat="tools">05 — Outils</button>
   </div>
   <div class="skills-grid">
-    <div class="skill-card visible" data-cat="lang"><div class="skill-logo">JS</div><p class="skill-name">JavaScript</p><p class="skill-cat">Langage</p></div>
-    <div class="skill-card visible" data-cat="lang"><div class="skill-logo">TS</div><p class="skill-name">TypeScript</p><p class="skill-cat">Langage</p></div>
-    <div class="skill-card visible" data-cat="lang"><div class="skill-logo">PY</div><p class="skill-name">Python</p><p class="skill-cat">Langage</p></div>
-    <div class="skill-card visible" data-cat="lang"><div class="skill-logo">JAVA</div><p class="skill-name">Java</p><p class="skill-cat">Langage</p></div>
-    <div class="skill-card visible" data-cat="lang"><div class="skill-logo">HTML</div><p class="skill-name">HTML5 / CSS3</p><p class="skill-cat">Langage</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">Node</div><p class="skill-name">Node.js</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">Ex</div><p class="skill-name">Express.js</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">Re</div><p class="skill-name">React.js</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">Ng</div><p class="skill-name">Angular</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">Ionic</div><p class="skill-name">Ionic</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">RN</div><p class="skill-name">React Native</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">FL</div><p class="skill-name">Flutter</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="fw"><div class="skill-logo">Dj</div><p class="skill-name">Django</p><p class="skill-cat">Framework</p></div>
-    <div class="skill-card visible" data-cat="db"><div class="skill-logo">SQL</div><p class="skill-name">MySQL</p><p class="skill-cat">Base de donnees</p></div>
-    <div class="skill-card visible" data-cat="db"><div class="skill-logo">Seq</div><p class="skill-name">Sequelize</p><p class="skill-cat">ORM</p></div>
-    <div class="skill-card visible" data-cat="db"><div class="skill-logo">FB</div><p class="skill-name">Firebase</p><p class="skill-cat">Base de donnees</p></div>
-    <div class="skill-card visible" data-cat="sec"><div class="skill-logo">JWT</div><p class="skill-name">JWT / RSA</p><p class="skill-cat">Authentification</p></div>
-    <div class="skill-card visible" data-cat="sec"><div class="skill-logo">RBAC</div><p class="skill-name">RBAC</p><p class="skill-cat">Controle d'acces</p></div>
-    <div class="skill-card visible" data-cat="tools"><div class="skill-logo">Git</div><p class="skill-name">Git / GitHub</p><p class="skill-cat">Versioning</p></div>
-    <div class="skill-card visible" data-cat="tools"><div class="skill-logo">Linux</div><p class="skill-name">Linux</p><p class="skill-cat">Systeme</p></div>
+    <div class="skill-card visible" data-cat="lang"><div class="skill-logo"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" loading="lazy"></div><p class="skill-name">JavaScript</p><p class="skill-cat">Langage</p></div>
+    <div class="skill-card visible" data-cat="lang"><div class="skill-logo"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" loading="lazy"></div><p class="skill-name">TypeScript</p><p class="skill-cat">Langage</p></div>
+    <div class="skill-card visible" data-cat="lang"><div class="skill-logo"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy"></div><p class="skill-name">Python</p><p class="skill-cat">Langage</p></div>
+    <div class="skill-card visible" data-cat="lang"><div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy"></div><p class="skill-name">Java</p><p class="skill-cat">Langage</p></div>
+    <div class="skill-card visible" data-cat="lang"><div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy"></div><p class="skill-name">HTML5</p><p class="skill-cat">Langage</p></div>
+    <div class="skill-card visible" data-cat="lang"><div class="skill-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy"></div><p class="skill-name">CSS3</p><p class="skill-cat">Langage</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" loading="lazy"></div><p class="skill-name">Node.js</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/express/FFFFFF" alt="Express.js" loading="lazy"></div><p class="skill-name">Express.js</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React.js" loading="lazy"></div><p class="skill-name">React.js</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/angular/DD0031" alt="Angular" loading="lazy"></div><p class="skill-name">Angular</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/ionic/3880FF" alt="Ionic" loading="lazy"></div><p class="skill-name">Ionic</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Native" loading="lazy"></div><p class="skill-name">React Native</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/flutter/02569B" alt="Flutter" loading="lazy"></div><p class="skill-name">Flutter</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="fw"><div class="skill-logo"><img src="https://cdn.simpleicons.org/django/3ECF8E" alt="Django" loading="lazy"></div><p class="skill-name">Django</p><p class="skill-cat">Framework</p></div>
+    <div class="skill-card visible" data-cat="db"><div class="skill-logo"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy"></div><p class="skill-name">MySQL</p><p class="skill-cat">Base de donnees</p></div>
+    <div class="skill-card visible" data-cat="db"><div class="skill-logo"><img src="https://cdn.simpleicons.org/sequelize/52B0E7" alt="Sequelize" loading="lazy"></div><p class="skill-name">Sequelize</p><p class="skill-cat">ORM</p></div>
+    <div class="skill-card visible" data-cat="db"><div class="skill-logo"><img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase" loading="lazy"></div><p class="skill-name">Firebase</p><p class="skill-cat">Base de donnees</p></div>
+    <div class="skill-card visible" data-cat="sec"><div class="skill-logo"><img src="https://cdn.simpleicons.org/jsonwebtokens/FB015B" alt="JWT" loading="lazy"></div><p class="skill-name">JWT / RSA</p><p class="skill-cat">Authentification</p></div>
+    <div class="skill-card visible" data-cat="sec"><div class="skill-logo"><svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5l-8-3Z"/><circle cx="12" cy="11" r="2.2"/><path d="M12 13.2V16"/></svg></div><p class="skill-name">RBAC</p><p class="skill-cat">Controle d'acces</p></div>
+    <div class="skill-card visible" data-cat="tools"><div class="skill-logo"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git / GitHub" loading="lazy"></div><p class="skill-name">Git / GitHub</p><p class="skill-cat">Versioning</p></div>
+    <div class="skill-card visible" data-cat="tools"><div class="skill-logo"><img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" loading="lazy"></div><p class="skill-name">Linux</p><p class="skill-cat">Systeme</p></div>
   </div>
 </section>
 
