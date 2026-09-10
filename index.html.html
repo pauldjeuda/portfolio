@@ -304,7 +304,7 @@ footer{position:relative;z-index:10;text-align:center;padding:1.4rem;border-top:
   <p class="label">Realisations</p>
   <h2 class="sec-title">Projets</h2>
   <div class="proj-grid">
-    <div class="proj-card"><div class="proj-ico">ERP</div><p class="proj-name">VAN BTP ERP</p><p class="proj-desc">Solution ERP de gestion de chantiers pour le secteur BTP au Cameroun. Modules production, RH, equipements avec tableaux de bord multi-roles et authentification securisee.</p><div class="pills" style="margin-bottom:.85rem"><span class="pill">Node.js</span><span class="pill">React</span><span class="pill">MySQL</span><span class="pill">JWT</span></div><a href="https://vanbtp.com" target="_blank" class="proj-link">Voir le projet — vanbtp.com</a></div>
+    <div class="proj-card"><div class="proj-media" id="van-media"><video id="van-video" muted autoplay loop playsinline preload="metadata" controls aria-label="Demo video du VAN BTP ERP"><source src="assets/videos/van.webm" type="video/webm"/></video><span class="proj-speed">x2</span></div><div class="proj-ico">ERP</div><p class="proj-name">VAN BTP ERP</p><p class="proj-desc">Solution ERP de gestion de chantiers pour le secteur BTP au Cameroun. Modules production, RH, equipements avec tableaux de bord multi-roles et authentification securisee.</p><div class="pills" style="margin-bottom:.85rem"><span class="pill">Node.js</span><span class="pill">React</span><span class="pill">MySQL</span><span class="pill">JWT</span></div><a href="https://vanbtp.com" target="_blank" class="proj-link">Voir le projet — vanbtp.com</a></div>
     <div class="proj-card"><div class="proj-media" id="healthtest-media"><video id="healthtest-video" muted autoplay loop playsinline preload="metadata" controls aria-label="Demo video de l'application Health Test"><source src="assets/videos/healthtest.webm" type="video/webm"/></video><span class="proj-speed">x2</span></div><div class="proj-ico">APP</div><p class="proj-name">Health Test</p><p class="proj-desc">Application mobile de commande de tests sanitaires a domicile. Gestion des commandes et des donnees patients en temps reel via Firebase.</p><div class="pills" style="margin-bottom:.85rem"><span class="pill">Ionic</span><span class="pill">Firebase</span><span class="pill">Angular</span></div><a href="https://github.com/pauldjeuda/health-test" target="_blank" class="proj-link">Voir sur GitHub</a></div>
     <div class="proj-card"><div class="proj-ico">MOB</div><p class="proj-name">Mater Market</p><p class="proj-desc">Interface mobile e-commerce pour La Mater Service. Developpement complet des interfaces de boutique en ligne livrees aux equipes commerciales.</p><div class="pills" style="margin-bottom:.85rem"><span class="pill">Ionic</span><span class="pill">React Native</span></div></div>
   </div>
@@ -342,6 +342,9 @@ document.querySelectorAll('.tab-btn').forEach(function(btn){btn.addEventListener
 var healthTestVideo=document.getElementById('healthtest-video');
 healthTestVideo.playbackRate=2;
 healthTestVideo.addEventListener('loadedmetadata',function(){healthTestVideo.playbackRate=2;});
+var vanVideo=document.getElementById('van-video');
+vanVideo.playbackRate=2;
+vanVideo.addEventListener('loadedmetadata',function(){vanVideo.playbackRate=2;});
 window.addEventListener('scroll',function(){var cur='';document.querySelectorAll('.section').forEach(function(s){if(window.scrollY>=s.offsetTop-220)cur=s.id;});document.querySelectorAll('.nav-link').forEach(function(s,i){var ids=['about','services','skills','education','experience','projects'];s.classList.toggle('active',ids[i]===cur);});},{passive:true});
 </script>
 </body>
